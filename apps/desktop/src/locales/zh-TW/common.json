@@ -1,0 +1,138 @@
+{
+  "app": {
+    "name": "RepoPolisher",
+    "version": "v{{version}}"
+  },
+  "nav": {
+    "projects": "專案",
+    "analysis": "分析",
+    "pullRequests": "拉取請求",
+    "settings": "設定"
+  },
+  "projects": {
+    "title": "專案",
+    "stats": "{{total}} 個專案 • {{withIssues}} 個有問題",
+    "addLocal": "新增本機",
+    "fetchTrending": "取得熱門",
+    "searchPlaceholder": "搜尋專案...",
+    "source": "來源",
+    "category": "分類",
+    "viewDetails": "檢視詳情",
+    "analyze": "分析",
+    "reAnalyze": "重新分析",
+    "filters": {
+      "all": "全部",
+      "github": "GitHub",
+      "local": "本機",
+      "ai": "AI/ML",
+      "web": "Web",
+      "cli": "CLI",
+      "library": "函式庫",
+      "other": "其他"
+    },
+    "empty": {
+      "title": "尚無專案",
+      "description": "新增本機專案或取得 GitHub 熱門專案以開始使用。",
+      "addLocal": "新增本機專案"
+    },
+    "card": {
+      "stars": "星標",
+      "forks": "分支",
+      "issues": "{{count}} 個問題"
+    }
+  },
+  "analysis": {
+    "title": "分析",
+    "subtitle": "檢視和管理分析結果",
+    "typosCli": "Typos CLI",
+    "githubAuth": "GitHub 認證",
+    "installed": "已安裝 (v{{version}})",
+    "notInstalled": "未安裝",
+    "notAuthenticated": "未認證",
+    "analyzedProjects": "已分析專案 ({{count}})",
+    "noAnalyzedProjects": "尚無已分析專案",
+    "selectProject": "選擇專案",
+    "selectProjectDescription": "從列表中選擇專案以檢視分析結果。",
+    "issues": "問題 ({{count}})",
+    "issuesCount": "{{count}} 個問題",
+    "selectedCount": "已選擇 {{count}} 個",
+    "selectionHint": "勾選待處理或已包含的問題以建立 PR 草稿。",
+    "include": "包含",
+    "ignore": "忽略",
+    "includeAll": "全部包含 ({{count}})",
+    "ignoreAll": "全部忽略 ({{count}})",
+    "selectAllEligible": "全選可用 ({{count}})",
+    "createDraft": "建立 PR 草稿",
+    "selectIssue": "選擇問題",
+    "status": {
+      "open": "待處理",
+      "included": "已包含",
+      "ignored": "已忽略",
+      "fixed": "已修復"
+    }
+  },
+  "prs": {
+    "title": "拉取請求",
+    "subtitle": "管理和提交 PR 草稿",
+    "projectsWithIssues": "有問題的專案 ({{count}})",
+    "noProjectsWithIssues": "沒有有問題的專案",
+    "drafts": "PR 草稿 ({{count}})",
+    "issuesCount": "{{count}} 個問題",
+    "noDrafts": "尚無 PR 草稿",
+    "noDraftsDescription": "分析此專案並選擇問題以建立 PR 草稿。",
+    "selectProject": "選擇專案",
+    "selectProjectDescription": "從列表中選擇專案以管理其 PR 草稿。",
+    "branch": "分支",
+    "issuesIncluded": "包含 {{count}} 個問題",
+    "created": "建立於 {{time}}",
+    "viewPR": "檢視 PR #{{number}}",
+    "delete": "刪除",
+    "submitPR": "提交 PR",
+    "submitSuccess": "PR 提交成功！",
+    "submitSuccessWithWarnings": "PR 已提交，但有 {{count}} 處修改無法自動套用。",
+    "submitFailure": "PR 提交失敗。",
+    "viewSubmittedPR": "開啟 PR",
+    "status": {
+      "draft": "草稿",
+      "ready": "就緒",
+      "submitted": "已提交",
+      "merged": "已合併",
+      "closed": "已關閉"
+    }
+  },
+  "settings": {
+    "title": "設定",
+    "subtitle": "設定 RepoPolisher 偏好和工具",
+    "analysisTools": "分析工具",
+    "analysisToolsDescription": "程式碼分析所需的外部工具",
+    "version": "版本 {{version}}",
+    "notInstalled": "未安裝",
+    "install": "安裝",
+    "installInstructions": "安裝說明",
+    "orHomebrew": "或透過 Homebrew",
+    "githubAuth": "GitHub 認證",
+    "githubAuthDescription": "建立拉取請求所需",
+    "loggedInAs": "已登入為 @{{username}}",
+    "installedNotAuth": "已安裝 (v{{version}}) - 未認證",
+    "authenticate": "認證",
+    "runToAuth": "執行此命令進行認證",
+    "recommended": "推薦",
+    "about": "關於 RepoPolisher",
+    "aboutDescription": "RepoPolisher 是一款 AI 驅動的工具，透過發現和修復拼字錯誤、樣式問題等來幫助您提升程式碼品質。",
+    "githubRepo": "GitHub 儲存庫",
+    "reportIssue": "回報問題"
+  },
+  "common": {
+    "loading": "載入中...",
+    "error": "錯誤",
+    "success": "成功",
+    "cancel": "取消",
+    "confirm": "確認",
+    "save": "儲存",
+    "delete": "刪除",
+    "edit": "編輯",
+    "close": "關閉",
+    "back": "返回",
+    "next": "下一步"
+  }
+}

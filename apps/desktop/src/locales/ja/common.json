@@ -1,0 +1,138 @@
+{
+  "app": {
+    "name": "RepoPolisher",
+    "version": "v{{version}}"
+  },
+  "nav": {
+    "projects": "プロジェクト",
+    "analysis": "分析",
+    "pullRequests": "プルリクエスト",
+    "settings": "設定"
+  },
+  "projects": {
+    "title": "プロジェクト",
+    "stats": "{{total}} プロジェクト • {{withIssues}} 件に問題あり",
+    "addLocal": "ローカル追加",
+    "fetchTrending": "トレンド取得",
+    "searchPlaceholder": "プロジェクトを検索...",
+    "source": "ソース",
+    "category": "カテゴリ",
+    "viewDetails": "詳細を見る",
+    "analyze": "分析",
+    "reAnalyze": "再分析",
+    "filters": {
+      "all": "すべて",
+      "github": "GitHub",
+      "local": "ローカル",
+      "ai": "AI/ML",
+      "web": "Web",
+      "cli": "CLI",
+      "library": "ライブラリ",
+      "other": "その他"
+    },
+    "empty": {
+      "title": "プロジェクトがありません",
+      "description": "ローカルプロジェクトを追加するか、GitHub のトレンドプロジェクトを取得して始めましょう。",
+      "addLocal": "ローカルプロジェクトを追加"
+    },
+    "card": {
+      "stars": "スター",
+      "forks": "フォーク",
+      "issues": "{{count}} 件の問題"
+    }
+  },
+  "analysis": {
+    "title": "分析",
+    "subtitle": "分析結果の表示と管理",
+    "typosCli": "Typos CLI",
+    "githubAuth": "GitHub 認証",
+    "installed": "インストール済み (v{{version}})",
+    "notInstalled": "未インストール",
+    "notAuthenticated": "未認証",
+    "analyzedProjects": "分析済みプロジェクト ({{count}})",
+    "noAnalyzedProjects": "分析済みのプロジェクトがありません",
+    "selectProject": "プロジェクトを選択",
+    "selectProjectDescription": "リストからプロジェクトを選択して分析結果を表示します。",
+    "issues": "問題 ({{count}})",
+    "issuesCount": "{{count}} 件の問題",
+    "selectedCount": "{{count}} 件選択中",
+    "selectionHint": "未対応または含まれる問題を選択して PR ドラフトを作成します。",
+    "include": "含める",
+    "ignore": "無視",
+    "includeAll": "すべて含める ({{count}})",
+    "ignoreAll": "すべて無視 ({{count}})",
+    "selectAllEligible": "すべて選択 ({{count}})",
+    "createDraft": "PR ドラフトを作成",
+    "selectIssue": "問題を選択",
+    "status": {
+      "open": "未対応",
+      "included": "含まれる",
+      "ignored": "無視済み",
+      "fixed": "修正済み"
+    }
+  },
+  "prs": {
+    "title": "プルリクエスト",
+    "subtitle": "PR ドラフトの管理と送信",
+    "projectsWithIssues": "問題のあるプロジェクト ({{count}})",
+    "noProjectsWithIssues": "問題のあるプロジェクトがありません",
+    "drafts": "PR ドラフト ({{count}})",
+    "issuesCount": "{{count}} 件の問題",
+    "noDrafts": "PR ドラフトがありません",
+    "noDraftsDescription": "このプロジェクトを分析し、問題を選択して PR ドラフトを作成してください。",
+    "selectProject": "プロジェクトを選択",
+    "selectProjectDescription": "リストからプロジェクトを選択して PR ドラフトを管理します。",
+    "branch": "ブランチ",
+    "issuesIncluded": "{{count}} 件の問題を含む",
+    "created": "作成日時 {{time}}",
+    "viewPR": "PR #{{number}} を見る",
+    "delete": "削除",
+    "submitPR": "PR を送信",
+    "submitSuccess": "PR を送信しました！",
+    "submitSuccessWithWarnings": "PR は送信されましたが、{{count}} 件の変更を自動適用できませんでした。",
+    "submitFailure": "PR の送信に失敗しました。",
+    "viewSubmittedPR": "PR を開く",
+    "status": {
+      "draft": "ドラフト",
+      "ready": "準備完了",
+      "submitted": "送信済み",
+      "merged": "マージ済み",
+      "closed": "クローズ"
+    }
+  },
+  "settings": {
+    "title": "設定",
+    "subtitle": "RepoPolisher の設定とツールの構成",
+    "analysisTools": "分析ツール",
+    "analysisToolsDescription": "コード分析に必要な外部ツール",
+    "version": "バージョン {{version}}",
+    "notInstalled": "未インストール",
+    "install": "インストール",
+    "installInstructions": "インストール手順",
+    "orHomebrew": "または Homebrew 経由",
+    "githubAuth": "GitHub 認証",
+    "githubAuthDescription": "プルリクエストの作成に必要",
+    "loggedInAs": "@{{username}} としてログイン中",
+    "installedNotAuth": "インストール済み (v{{version}}) - 未認証",
+    "authenticate": "認証",
+    "runToAuth": "このコマンドを実行して認証",
+    "recommended": "推奨",
+    "about": "RepoPolisher について",
+    "aboutDescription": "RepoPolisher は、タイポやスタイルの問題などを発見・修正してコード品質の向上を支援する AI 駆動ツールです。",
+    "githubRepo": "GitHub リポジトリ",
+    "reportIssue": "問題を報告"
+  },
+  "common": {
+    "loading": "読み込み中...",
+    "error": "エラー",
+    "success": "成功",
+    "cancel": "キャンセル",
+    "confirm": "確認",
+    "save": "保存",
+    "delete": "削除",
+    "edit": "編集",
+    "close": "閉じる",
+    "back": "戻る",
+    "next": "次へ"
+  }
+}

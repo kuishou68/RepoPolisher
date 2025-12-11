@@ -1,0 +1,152 @@
+{
+  "app": {
+    "name": "RepoPolisher",
+    "version": "v{{version}}"
+  },
+  "nav": {
+    "projects": "Projects",
+    "analysis": "Analysis",
+    "pullRequests": "Pull Requests",
+    "settings": "Settings"
+  },
+  "projects": {
+    "title": "Projects",
+    "stats": "{{total}} projects • {{withIssues}} with issues",
+    "addLocal": "Add Local",
+    "fetchTrending": "Fetch Trending",
+    "searchPlaceholder": "Search projects...",
+    "source": "Source",
+    "category": "Category",
+    "viewDetails": "View Details",
+    "analyze": "Analyze",
+    "reAnalyze": "Re-analyze",
+    "filters": {
+      "all": "All",
+      "github": "GitHub",
+      "local": "Local",
+      "ai": "AI/ML",
+      "web": "Web",
+      "cli": "CLI",
+      "library": "Library",
+      "other": "Other"
+    },
+    "empty": {
+      "title": "No projects yet",
+      "description": "Add a local project or fetch trending GitHub projects to get started.",
+      "addLocal": "Add Local Project"
+    },
+    "card": {
+      "stars": "Stars",
+      "forks": "Forks",
+      "issues": "{{count}} issues"
+    },
+    "confirmDelete": "Are you sure you want to delete this project?",
+    "notFound": "Project not found",
+    "reanalyze": "Re-analyze",
+    "details": {
+      "info": "Project Info",
+      "languages": "Languages",
+      "analysisHistory": "Analysis History",
+      "openIssues": "Open Issues",
+      "lastAnalyzed": "Last analyzed",
+      "issuesFound": "Issues found",
+      "noLanguages": "No language data available",
+      "noHistory": "No analysis history yet"
+    }
+  },
+  "analysis": {
+    "title": "Analysis",
+    "subtitle": "View and manage analysis results",
+    "typosCli": "Typos CLI",
+    "githubAuth": "GitHub Auth",
+    "installed": "Installed (v{{version}})",
+    "notInstalled": "Not installed",
+    "notAuthenticated": "Not authenticated",
+    "analyzedProjects": "Analyzed Projects ({{count}})",
+    "noAnalyzedProjects": "No analyzed projects yet",
+    "selectProject": "Select a project",
+    "selectProjectDescription": "Choose a project from the list to view its analysis results.",
+    "issues": "Issues ({{count}})",
+    "issuesCount": "{{count}} issues",
+    "selectedCount": "{{count}} selected",
+    "selectionHint": "Select open or included issues to add them to a PR draft.",
+    "include": "Include",
+    "ignore": "Ignore",
+    "includeAll": "Include All ({{count}})",
+    "ignoreAll": "Ignore All ({{count}})",
+    "selectAllEligible": "Select All ({{count}})",
+    "createDraft": "Create PR Draft",
+    "selectIssue": "Select issue",
+    "openInEditor": "Open in VS Code",
+    "status": {
+      "open": "Open",
+      "included": "Included",
+      "ignored": "Ignored",
+      "fixed": "Fixed"
+    }
+  },
+  "prs": {
+    "title": "Pull Requests",
+    "subtitle": "Manage and submit PR drafts",
+    "projectsWithIssues": "Projects with Issues ({{count}})",
+    "noProjectsWithIssues": "No projects with issues",
+    "drafts": "PR Drafts ({{count}})",
+    "issuesCount": "{{count}} issues",
+    "noDrafts": "No PR drafts",
+    "noDraftsDescription": "Analyze this project and select issues to create a PR draft.",
+    "selectProject": "Select a project",
+    "selectProjectDescription": "Choose a project from the list to manage its PR drafts.",
+    "branch": "Branch",
+    "issuesIncluded": "{{count}} issues included",
+    "created": "Created {{time}}",
+    "viewPR": "View PR #{{number}}",
+    "delete": "Delete",
+    "submitPR": "Submit PR",
+    "submitSuccess": "PR submitted successfully!",
+    "submitSuccessWithWarnings": "PR submitted, but {{count}} selected change(s) could not be applied automatically.",
+    "submitFailure": "Failed to submit PR.",
+    "viewSubmittedPR": "Open PR",
+    "status": {
+      "draft": "Draft",
+      "ready": "Ready",
+      "submitted": "Submitted",
+      "merged": "Merged",
+      "closed": "Closed"
+    }
+  },
+  "settings": {
+    "title": "Settings",
+    "subtitle": "Configure RepoPolisher preferences and tools",
+    "analysisTools": "Analysis Tools",
+    "analysisToolsDescription": "External tools required for code analysis",
+    "version": "Version {{version}}",
+    "notInstalled": "Not installed",
+    "install": "Install",
+    "installInstructions": "Installation Instructions",
+    "orHomebrew": "Or via Homebrew",
+    "githubAuth": "GitHub Authentication",
+    "githubAuthDescription": "Required for creating pull requests",
+    "loggedInAs": "Logged in as @{{username}}",
+    "installedNotAuth": "Installed (v{{version}}) - Not authenticated",
+    "authenticate": "Authenticate",
+    "runToAuth": "Run this command to authenticate",
+    "recommended": "Recommended",
+    "about": "About RepoPolisher",
+    "aboutDescription": "RepoPolisher is an AI-powered tool that helps you improve code quality by finding and fixing typos, style issues, and more.",
+    "githubRepo": "GitHub Repository",
+    "reportIssue": "Report Issue"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "close": "Close",
+    "back": "Back",
+    "next": "Next"
+  }
+}

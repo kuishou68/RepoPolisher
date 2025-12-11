@@ -1,0 +1,28 @@
+{
+  "name": "repo-polisher",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Code quality automation tool",
+  "author": "RepoPolisher Team",
+  "license": "MIT",
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "clean": "turbo run clean && rm -rf node_modules"
+  },
+  "devDependencies": {
+    "prettier": "^3.1.0",
+    "turbo": "^1.10.0",
+    "typescript": "^5.2.2"
+  },
+  "packageManager": "pnpm@8.10.0",
+  "engines": {
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/user/repo-polisher.git"
+  }
+}

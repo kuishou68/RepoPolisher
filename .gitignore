@@ -1,0 +1,51 @@
+# Dependencies
+node_modules
+.pnpm-store
+
+# Build outputs
+dist
+out
+.next
+*.tsbuildinfo
+
+# Electron
+release
+*.dmg
+*.exe
+*.AppImage
+*.snap
+
+# IDE
+.idea
+.vscode
+*.swp
+*.swo
+.DS_Store
+
+# Logs
+logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Cache
+.turbo
+.cache
+.eslintcache
+
+# Testing
+coverage
+
+# Misc
+*.pem
+thumbs.db

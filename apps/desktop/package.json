@@ -1,0 +1,97 @@
+{
+  "name": "@repo-polisher/desktop",
+  "version": "0.1.0",
+  "private": true,
+  "main": "dist-electron/main.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build && electron-builder",
+    "build:vite": "tsc && vite build",
+    "preview": "vite preview",
+    "electron:dev": "vite",
+    "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist dist-electron",
+    "postinstall": "npx @electron/rebuild -f -w better-sqlite3",
+    "rebuild": "npx @electron/rebuild -f -w better-sqlite3"
+  },
+  "dependencies": {
+    "@repo-polisher/core": "workspace:*",
+    "@repo-polisher/db": "workspace:*",
+    "@repo-polisher/protocol": "workspace:*",
+    "@repo-polisher/shared": "workspace:*",
+    "@radix-ui/react-dialog": "^1.0.5",
+    "@radix-ui/react-dropdown-menu": "^2.0.6",
+    "@radix-ui/react-icons": "^1.3.0",
+    "@radix-ui/react-progress": "^1.0.3",
+    "@radix-ui/react-scroll-area": "^1.0.5",
+    "@radix-ui/react-select": "^2.0.0",
+    "@radix-ui/react-separator": "^1.0.3",
+    "@radix-ui/react-tabs": "^1.0.4",
+    "@radix-ui/react-tooltip": "^1.0.7",
+    "@tanstack/react-query": "^4.36.0",
+    "@trpc/client": "^10.45.0",
+    "@trpc/react-query": "^10.45.0",
+    "@trpc/server": "^10.45.0",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.0",
+    "diff2html": "^3.4.52",
+    "electron-trpc": "^0.5.2",
+    "i18next": "^23.7.0",
+    "i18next-browser-languagedetector": "^7.2.0",
+    "lucide-react": "^0.300.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-i18next": "^14.0.0",
+    "react-router-dom": "^6.21.0",
+    "tailwind-merge": "^2.2.0",
+    "zod": "^3.22.0",
+    "zustand": "^4.4.0"
+  },
+  "devDependencies": {
+    "@electron/rebuild": "^3.6.0",
+    "@types/react": "^18.2.43",
+    "@types/react-dom": "^18.2.17",
+    "@vitejs/plugin-react": "^4.2.1",
+    "autoprefixer": "^10.4.16",
+    "electron": "^28.1.0",
+    "electron-builder": "^24.9.1",
+    "postcss": "^8.4.32",
+    "tailwindcss": "^3.4.0",
+    "typescript": "^5.3.0",
+    "vite": "^5.0.10",
+    "vite-plugin-electron": "^0.28.0",
+    "vite-plugin-electron-renderer": "^0.14.5"
+  },
+  "build": {
+    "appId": "com.repo-polisher.app",
+    "productName": "RepoPolisher",
+    "directories": {
+      "buildResources": "resources",
+      "output": "release"
+    },
+    "files": [
+      "dist/**/*",
+      "dist-electron/**/*"
+    ],
+    "mac": {
+      "category": "public.app-category.developer-tools",
+      "target": [
+        "dmg",
+        "zip"
+      ]
+    },
+    "win": {
+      "target": [
+        "nsis",
+        "zip"
+      ]
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ]
+    }
+  }
+}

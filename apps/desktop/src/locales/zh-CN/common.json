@@ -1,0 +1,152 @@
+{
+  "app": {
+    "name": "RepoPolisher",
+    "version": "v{{version}}"
+  },
+  "nav": {
+    "projects": "项目",
+    "analysis": "分析",
+    "pullRequests": "拉取请求",
+    "settings": "设置"
+  },
+  "projects": {
+    "title": "项目",
+    "stats": "{{total}} 个项目 • {{withIssues}} 个有问题",
+    "addLocal": "添加本地",
+    "fetchTrending": "获取热门",
+    "searchPlaceholder": "搜索项目...",
+    "source": "来源",
+    "category": "分类",
+    "viewDetails": "查看详情",
+    "analyze": "分析",
+    "reAnalyze": "重新分析",
+    "filters": {
+      "all": "全部",
+      "github": "GitHub",
+      "local": "本地",
+      "ai": "AI/ML",
+      "web": "Web",
+      "cli": "CLI",
+      "library": "库",
+      "other": "其他"
+    },
+    "empty": {
+      "title": "暂无项目",
+      "description": "添加本地项目或获取热门 GitHub 项目以开始使用。",
+      "addLocal": "添加本地项目"
+    },
+    "card": {
+      "stars": "星标",
+      "forks": "分支",
+      "issues": "{{count}} 个问题"
+    },
+    "confirmDelete": "确定要删除此项目吗？",
+    "notFound": "未找到项目",
+    "reanalyze": "重新分析",
+    "details": {
+      "info": "项目信息",
+      "languages": "编程语言",
+      "analysisHistory": "分析历史",
+      "openIssues": "待处理问题",
+      "lastAnalyzed": "上次分析",
+      "issuesFound": "发现问题",
+      "noLanguages": "暂无语言数据",
+      "noHistory": "暂无分析历史"
+    }
+  },
+  "analysis": {
+    "title": "分析",
+    "subtitle": "查看和管理分析结果",
+    "typosCli": "Typos CLI",
+    "githubAuth": "GitHub 认证",
+    "installed": "已安装 (v{{version}})",
+    "notInstalled": "未安装",
+    "notAuthenticated": "未认证",
+    "analyzedProjects": "已分析项目 ({{count}})",
+    "noAnalyzedProjects": "暂无已分析项目",
+    "selectProject": "选择项目",
+    "selectProjectDescription": "从列表中选择项目以查看分析结果。",
+    "issues": "问题 ({{count}})",
+    "issuesCount": "{{count}} 个问题",
+    "selectedCount": "已选择 {{count}} 个",
+    "selectionHint": "勾选待处理或已包含的问题来生成 PR 草稿。",
+    "include": "包含",
+    "ignore": "忽略",
+    "includeAll": "全部包含 ({{count}})",
+    "ignoreAll": "全部忽略 ({{count}})",
+    "selectAllEligible": "全选可用 ({{count}})",
+    "createDraft": "创建 PR 草稿",
+    "selectIssue": "选择问题",
+    "openInEditor": "在 VS Code 中打开",
+    "status": {
+      "open": "待处理",
+      "included": "已包含",
+      "ignored": "已忽略",
+      "fixed": "已修复"
+    }
+  },
+  "prs": {
+    "title": "拉取请求",
+    "subtitle": "管理和提交 PR 草稿",
+    "projectsWithIssues": "有问题的项目 ({{count}})",
+    "noProjectsWithIssues": "没有有问题的项目",
+    "drafts": "PR 草稿 ({{count}})",
+    "issuesCount": "{{count}} 个问题",
+    "noDrafts": "暂无 PR 草稿",
+    "noDraftsDescription": "分析此项目并选择问题以创建 PR 草稿。",
+    "selectProject": "选择项目",
+    "selectProjectDescription": "从列表中选择项目以管理其 PR 草稿。",
+    "branch": "分支",
+    "issuesIncluded": "包含 {{count}} 个问题",
+    "created": "创建于 {{time}}",
+    "viewPR": "查看 PR #{{number}}",
+    "delete": "删除",
+    "submitPR": "提交 PR",
+    "submitSuccess": "PR 提交成功！",
+    "submitSuccessWithWarnings": "PR 已提交，但有 {{count}} 处修改无法自动应用。",
+    "submitFailure": "PR 提交失败。",
+    "viewSubmittedPR": "打开 PR",
+    "status": {
+      "draft": "草稿",
+      "ready": "就绪",
+      "submitted": "已提交",
+      "merged": "已合并",
+      "closed": "已关闭"
+    }
+  },
+  "settings": {
+    "title": "设置",
+    "subtitle": "配置 RepoPolisher 偏好和工具",
+    "analysisTools": "分析工具",
+    "analysisToolsDescription": "代码分析所需的外部工具",
+    "version": "版本 {{version}}",
+    "notInstalled": "未安装",
+    "install": "安装",
+    "installInstructions": "安装说明",
+    "orHomebrew": "或通过 Homebrew",
+    "githubAuth": "GitHub 认证",
+    "githubAuthDescription": "创建拉取请求所需",
+    "loggedInAs": "已登录为 @{{username}}",
+    "installedNotAuth": "已安装 (v{{version}}) - 未认证",
+    "authenticate": "认证",
+    "runToAuth": "运行此命令进行认证",
+    "recommended": "推荐",
+    "about": "关于 RepoPolisher",
+    "aboutDescription": "RepoPolisher 是一款 AI 驱动的工具，帮助您通过发现和修复拼写错误、样式问题等来提高代码质量。",
+    "githubRepo": "GitHub 仓库",
+    "reportIssue": "报告问题"
+  },
+  "common": {
+    "loading": "加载中...",
+    "error": "错误",
+    "success": "成功",
+    "cancel": "取消",
+    "confirm": "确认",
+    "save": "保存",
+    "delete": "删除",
+    "edit": "编辑",
+    "close": "关闭",
+    "back": "返回",
+    "next": "下一步"
+  }
+}
