@@ -28,13 +28,20 @@ export class GhCli {
       let headRef: string | undefined = draft.branch;
       let pushRemote = 'origin';
 
-      // Create branch
+      // Create branch (delete if already exists from a previous failed attempt)
+      const branchExists = await this.runGit(['rev-parse', '--verify', draft.branch]);
+      if (branchExists.success) {
+        // Branch exists, delete it first
+        await this.runGit(['checkout', draft.baseBranch]);
+        await this.runGit(['branch', '-D', draft.branch]);
+      }
       await this.runGitOrThrow(['checkout', '-b', draft.branch], 'Failed to create branch');
 
       // Apply changes (files should already be modified)
       await this.runGitOrThrow(['add', '-A'], 'Failed to stage changes');
       await this.runGitOrThrow([
         'commit',
+        '--no-verify',  // Skip pre-commit hooks from target repo
         '-m',
         draft.title,
         '-m',
